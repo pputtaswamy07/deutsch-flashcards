@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f8;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #2b2f77;
+}
+
+.subtitle {
+  margin: 4px 0 24px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.level-filter {
+  display: flex;
+  gap: 6px;
+}
+
+.level-filter button {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.level-filter button.active {
+  background: #2b2f77;
+  color: #fff;
+  border-color: #2b2f77;
+}
+
+.shuffle-btn {
+  border: none;
+  background: #eee;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.shuffle-btn:hover {
+  background: #e0e0e0;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.score {
+  color: #888;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.actions button {
+  flex: 1;
+  max-width: 180px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-review {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.btn-known {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.nav {
+  margin-top: 14px;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
